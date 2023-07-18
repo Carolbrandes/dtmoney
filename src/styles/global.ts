@@ -1,7 +1,8 @@
 import { createGlobalStyle } from "styled-components";
+import { colors } from "./variables";
 
 export const GlobalStyle = createGlobalStyle`
-        :root{
+        /* :root{
             --background: "#f0f2f5";
             --red: "#E52E4D";
             --blue: "#5429CC";
@@ -9,7 +10,7 @@ export const GlobalStyle = createGlobalStyle`
             --text-title: "#363F5F";
             --text-body: "#969CB3";
             --shape: "#fff";
-        }
+        } */
 
         *{
             margin: 0;
@@ -29,7 +30,8 @@ export const GlobalStyle = createGlobalStyle`
         }
 
         body{
-            background: var(--background);
+            /* background: var(--background); */
+            background: ${colors.background};
             -webkit-font-smoothing: antialiased; /* fontes mais nitidas */
         }
 
